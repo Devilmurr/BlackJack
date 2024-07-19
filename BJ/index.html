@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Black Jack</title>
+        <link rel="stylesheet" href="blackjack.css">
+        <script src="blackjack.js"></script>
+    </head>
+    <body>
+        <h2>Dealer: <span id="dealer-sum"></span></h2>
+        <div id="dealer-cards">
+            <img id="hidden" src="./cards/BACK.png">
+        </div>
+        
+        <h2>You: <span id="your-sum"></span></h2>
+        <div id="your-cards"></div>
+
+        <h2>Your Balance: <span id="balance">1000</span> €</h2>
+        <div id="betting-buttons">
+            <button class="bet-button" data-amount="50">Bet 50 €</button>
+            <button class="bet-button" data-amount="100">Bet 100 €</button>
+            <button class="bet-button" data-amount="150">Bet 150 €</button>
+            <button class="bet-button" data-amount="200">Bet 200 €</button>
+            <button class="bet-button" data-amount="250">Bet 250 €</button>
+            <button class="bet-button" data-amount="300">Bet 300 €</button>
+            <button class="bet-button" data-amount="350">Bet 350 €</button>
+            <button class="bet-button" data-amount="400">Bet 400 €</button>
+            <button class="bet-button" data-amount="450">Bet 450 €</button>
+            <button class="bet-button" data-amount="500">Bet 500 €</button>
+            <button class="bet-button" data-amount="1000">Bet 1000 €</button>
+        </div>
+
+        <br>
+        <button id="hit">Hit</button>
+        <button id="stay">Stay</button>
+        <p><button id="newGame">new Game</button></p>
+        <p id="results"></p>
+    </body>
+</html>
